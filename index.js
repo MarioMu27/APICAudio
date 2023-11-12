@@ -3,7 +3,7 @@ const cors = require('cors');
 const app = express();
 const axios = require('axios'); 
 
-const apiURL = 'https://mica-cypress-september.glitch.me';
+const apiURL = '';
 
 
 
