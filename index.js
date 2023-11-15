@@ -3,7 +3,15 @@ const cors = require('cors');
 const app = express();
 const axios = require('axios'); 
 
-//const apiURL = 'https://mica-cypress-september.glitch.me';
+app.use((req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', 'https://front-c-audio.vercel.app');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+  res.setHeader('Access-Control-Allow-Credentials', 'true');
+  next();
+});
+
+const apiURL = 'https://pool-swanky-dinghy.glitch.me';
 
 
 
